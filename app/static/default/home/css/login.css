@@ -1,0 +1,721 @@
+.linebg {
+	margin-top: 30px;
+	margin-bottom: 0;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}
+
+.linebg b {
+	height: 4px;
+	border-top: 1px solid #cbcbcb;
+	display: inline-block;
+	width: 90px;
+}
+
+.linebg .fond {
+	margin-right: 8px;
+}
+
+.back {
+	margin-left: 8px;
+}
+
+.dl2 {
+	width: 35px;
+	height: 35px;
+	margin: 5px 10px;
+	display: inline-block;
+}
+
+.dl2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.api_login @charset "utf-8";
+
+/* CSS Document */
+
+
+/*新登录页面*/
+
+body {
+	width: 100%;
+	min-width: 555px;
+	/*background:#f3f3f3;*/
+}
+
+.new_wz_log {
+	margin-top: 25px;
+	margin-right: 172px;
+	width: 100%;
+	padding: 35px 30px;
+	background-color: #fff;
+	border-radius: 3px;
+	height: 389px;
+}
+
+.wz-logo {
+	display: inline-block;
+	text-align: center;
+	background: url(https://www.wezchina.com/app/Tpl/wezchina/images/wz_ui/logo-login.png) 0 8px no-repeat;
+	background-size: 150px;
+	width: 150px;
+	height: 56px;
+	margin: 66px auto;
+	line-height: 56px;
+	padding-left: 50px;
+	color: #fff;
+	font-size: 24px;
+}
+
+.f_l.dlr {
+	text-align: left;
+}
+
+.control-group {
+	float: none;
+	width: 450px;
+}
+
+.textbox {
+	float: none;
+	margin-right: -4px;
+	border-radius: 0;
+}
+
+.control-group .control-label {
+	width: 30px;
+}
+
+.input-group-btn .btn {
+	width: 100px;
+	background: #f0f0f0;
+	height: 41px;
+	line-height: 41px;
+}
+
+#verify {
+	margin-top: -3px;
+}
+
+#J_send_sms_verify {
+	background: #ff9600;
+}
+
+.wz_new_sel {
+	float: left;
+	margin-right: -1px;
+	padding-left: 25px;
+	width: 85px;
+	height: 50px;
+	line-height: 50px;
+	border: 1px #D7D7D7 solid;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.control-group .send_sms_verify {
+	width: 130px;
+}
+
+.button_row.term {
+	width: 100%;
+	text-align: left;
+	line-height: 12px;
+	margin-top: 20px;
+}
+
+#J_wrap {
+	min-width: 555px !important;
+	width: 100%;
+}
+
+.new_wz_log .control-group {
+	margin-top: 0;
+	margin-bottom: 12px;
+	width: 100%;
+}
+
+.control-group {
+	margin-top: 5x;
+	margin-bottom: 5px;
+}
+
+.textbox {
+	margin-right: 0;
+	width: 300px;
+	padding: 0 8px;
+}
+
+.logwrap {
+	width: 450px;
+	margin: 0 auto;
+	padding: 30px 0 40px 0;
+}
+
+.weedialog .dialog-header {
+	background: #283244;
+	height: 46px;
+	line-height: 46px;
+}
+
+
+/* 关于ui-checkbox 开始 */
+
+.ui-checkbox {
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.common_cbo {
+	height: 14px;
+	background: url(https://www.wezchina.com/app/Tpl/wezchina/images/fanwe_ui/ui_cbobg.png) no-repeat 0 0px;
+	padding-left: 20px;
+	line-height: 14px;
+}
+
+.common_cbo_checked {
+	height: 14px;
+	background: url(https://www.wezchina.com/app/Tpl/wezchina/images/fanwe_ui/ui_cbobg.png) no-repeat 0 -78px;
+	padding-left: 20px;
+	line-height: 14px;
+}
+
+.common_cbo_hover {
+	height: 14px;
+	background: url(https://www.wezchina.com/app/Tpl/wezchina/images/fanwe_ui/ui_cbobg.png) no-repeat 0 -39px;
+	padding-left: 20px;
+	line-height: 14px;
+}
+
+.control-text .pr .textbox {
+	border: 1px solid #d7d7d7;
+	transition: all .5s;
+}
+
+.control-text .pr .textbox:focus {
+	border-color: #faaa00;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+/*登录按钮*/
+
+.control-group .theme_bgcolor {
+	background: #283244;
+	background: #ff6600;
+}
+
+.control-group .theme_bgcolor:hover {
+	background: #26B5EF;
+}
+
+.control-group .pr .textbox {
+	height: 50px;
+	line-height: 50px;
+	box-sizing: border-box;
+}
+
+
+/*个人资料*/
+
+.right {
+	float: left;
+}
+
+.control-group .control-label {
+	width: 76px;
+}
+
+.textspan {
+	width: 300px;
+	color: #333;
+	float: left;
+	font-size: 14px;
+}
+
+.homeright .list_conment {
+	border: 1px solid #f0f0f0;
+	padding: 10px;
+}
+
+.list_conment {
+	border: none;
+	padding: 10px;
+}
+
+
+/*收件地址*/
+
+.dlmain .f_r .full .theme_bgcolor {
+	background: #fff;
+}
+
+.dlmain .f_r .full .theme_bgcolor1 {
+	background: #dbf2fe;
+	color: #12adff !important;
+}
+
+.theme_bgcolor_address {
+	width: 99%;
+	border: 1px dashed #f0f0f0;
+	padding: 10px 0;
+	text-align: left;
+	color: #333;
+}
+
+.consignee_row {
+	padding: 15px 0;
+}
+
+.consignee_row .consignee_item {
+	padding-left: 60px;
+	background: url(https://www.wezchina.com/app/Tpl/wezchina/images/wz_ui/wz-address.png) 16px -32px no-repeat;
+}
+
+.consignee_row .consignee_item.defult {
+	padding-left: 60px;
+	background: url(https://www.wezchina.com/app/Tpl/wezchina/images/wz_ui/wz-address.png) 16px 10px no-repeat;
+}
+
+.ui-button .wz-addplus {
+	*+background: url(https://www.wezchina.com/app/Tpl/wezchina/images/wz_ui/wz-plus.png) 8px 4px no-repeat;
+	position: relative;
+	color: #606060;
+	display: block;
+	padding: 0 20px 0 50px;
+	margin-left: 10px;
+}
+
+.ui-button .wz-addplus:after {
+	content: "+";
+	position: absolute;
+	left: 10px;
+	top: -3px;
+	color: #888;
+	font-size: 40px;
+}
+
+.dlmain .f_r .full .theme_bgcolor1 .wz-addplus {
+	color: #12adff;
+}
+
+.dlmain .f_r .full .theme_bgcolor1 .wz-addplus:after {
+	color: #12adff;
+}
+
+#add_consignee .dialog-close {
+	width: 20px;
+}
+
+
+/*配送地址*/
+
+.dlmain .f_r .full .submit_btn_row .theme_bgcolor {
+	background: #faaa00;
+}
+
+.field_select.small dt {
+	width: 120px;
+}
+
+.holder_tip {
+	color: #a9a9a9;
+	text-align: left;
+	font-size: 14px;
+	position: absolute;
+	height: 49px;
+	line-height: 50px;
+	width: 172px;
+	top: 0px;
+	left: 0;
+	padding: 0 12px;
+	border-radius: 4px;
+}
+
+
+/*登录切换*/
+
+.icon-login {
+	cursor: pointer;
+	float: right;
+}
+
+.icon-login>span {
+	width: 32px;
+	height: 32px;
+	display: block;
+	background: url("https://www.wezchina.com/app/Tpl/wezchina/images/wz_ui/icon-login.png") no-repeat;
+	opacity: .6;
+}
+
+.icon-login>span.qrcode-login {
+	background-position: 0 0;
+}
+
+.icon-login>span.mobile-login {
+	background-position: 0 -32px;
+}
+
+.icon-login>span.subadmin-login {
+	background-position: 0 -64px;
+}
+
+.icon-login>span.subadmin-login-active {
+	background-position: 0 -98px;
+}
+
+.wz-login-avatar {
+	margin-top: -30px !important;
+}
+
+.wz-login-avatar img {
+	width: 120px;
+	border-radius: 60px;
+}
+
+
+/*revise weixin扫码登录页面*/
+
+.f_l .dlr {
+	padding: 50px 0;
+}
+
+.wz-login-mobile .control-group .theme_bgcolor {
+	background: #d22721;
+}
+
+.wz-login-mobile .control-group .theme_bgcolor:hover {
+	background: #ff0000;
+}
+
+#pop_user_login .dialog-cc {
+	height: 383px;
+	height: 400px;
+}
+
+#pop_user_login .dialog-cl {
+	display: none;
+}
+
+.new_wz_log .dlr {
+	border-radius: 4px;
+	width: 100%;
+	background: none;
+	padding: 0;
+}
+
+.new_wz_log .dlr .dlr1 {
+	width: 100%;
+	margin-bottom: 35px;
+	border-bottom: 0;
+}
+
+
+/*登录*/
+
+#user_login_form {
+	width: 100%;
+}
+
+.dlmain {
+	background: url({$TMPL}/images/images/reglog_bg.gif) repeat-y;
+}
+
+.J_wrap {
+	position: relative;
+	z-index: 3;
+}
+
+.my_shadow_bg {
+	z-index: 2;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+/* 新版登录 */
+
+.login_top {
+	height: 70px;
+	width: 100%;
+	background-color: #fff;
+}
+
+.login_top_wrap {
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.login_top_wrap li {
+	float: left;
+}
+
+.login_top_wrap li.login_top_r {
+	float: right;
+}
+
+.login_top_r a {
+	display: inline-block;
+	height: 90px;
+	line-height: 90px;
+	font-size: 16px;
+	color: #333;
+}
+
+.login_top_r a:hover {
+	color: #d22721;
+}
+
+.blank270_bg {
+	background: url('https://www.wezchina.com/app/Tpl/wezchina/images/login_bg.jpg') no-repeat center center;
+	height: 558px;
+	position: relative;
+}
+
+.wz-logo2 {
+	display: inline-block;
+	background: url(https://www.wezchina.com/app/Tpl/wezchina/images/wz_ui/logo-login.png) 0 8px no-repeat;
+	background-size: 122px;
+	width: 122px;
+	height: 54px;
+	margin-top: 6px;
+}
+
+.login_bottom {
+	width: 100%;
+	text-align: center;
+	margin-top: 70px;
+}
+
+.login_bottom a {
+	display: inline-block;
+	width: 92px;
+	color: #333；
+}
+
+.login_bottom .copyright {
+	height: 40px;
+	margin-top: 24px;
+}
+
+.Giant-screen {
+	position: relative;
+}
+
+.ui-button,
+.ui-button_active,
+.ui-button_hover,
+.ui_button {
+	border: 1px solid transparent;
+	height: 38px;
+	line-height: 38px;
+	cursor: pointer;
+	color: #fff;
+	display: inline;
+	float: left;
+	font-size: 16px;
+	text-align: center;
+	padding: 0 20px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+@media screen and (max-width: 1200px) {
+	.Giant-screen>img {
+		height: 297px!important;
+		-webkit-filter: blur(1px);
+		/* Chrome, Opera */
+		-moz-filter: blur(1px);
+		-ms-filter: blur(1px);
+		filter: blur(1px);
+	}
+	.textbox {
+		width: 69%!important;
+	}
+	.Code {
+		width: 52%!important;
+	}
+}
+
+@media screen and (max-width: 990px) {
+	.textbox {
+		width: 87%!important;
+	}
+	.Code {
+		width: 80%!important;
+	}
+}
+
+@media screen and (max-width: 745px) {
+	.wz_new_sel {
+		float: left;
+		margin-right: -1px;
+		padding-left: 65px;
+		width: 129px;
+		height: 50px;
+		line-height: 50px;
+		border: 1px #D7D7D7 solid;
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+	.textbox {
+		width: 70%!important;
+	}
+	.Code {
+		width: 69.5%!important;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.wz_new_sel {
+		float: left;
+		margin-right: -1px;
+		padding-left: 14px;
+		width: 70px;
+		height: 50px;
+		line-height: 50px;
+		border: 1px #D7D7D7 solid;
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+	.textbox {
+		width: 70%!important;
+	}
+	.Code {
+		width: 69.5%!important;
+	}
+	.f_l img {
+		width: 70px;
+	}
+	.bg_red {
+		width: 70px!important;
+		font-size: 12px;
+		text-align: center;
+		padding: 0;
+	}
+	.common_cbo_checked a {
+		font-size: 12px;
+	}
+}
+
+
+/*footer*/
+
+.footer {
+	background: #FFF;
+}
+
+.login_bottom {
+	width: 100%;
+	text-align: center;
+	margin-top: 200px;
+}
+
+.login_bottom a {
+	display: inline-block;
+	width: 92px;
+	color: #333;
+}
+
+.login_bottom .copyright {
+	height: 40px;
+	margin-top: 24px;
+}
+
+
+/*二维码*/
+
+.impowerBox {
+	line-height: 1.6;
+	position: absolute;
+	width: 93%;
+	z-index: 1;
+	text-align: center;
+	top: 24px;
+	background-color: #FFF;
+	left: 15px;
+	height: 390px;
+	display: none;
+}
+
+.impowerBox .title {
+	text-align: center;
+	font-size: 20px;
+}
+
+.impowerBox .qrcode {
+	width: 230px;
+}
+
+.impowerBox .info {
+	width: 280px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.impowerBox .status.status_browser {
+	text-align: center;
+}
+
+.impowerBox .status p {
+	font-size: 13px;
+}
+
+.impowerBox .status {
+	padding: 7px 14px;
+	text-align: left;
+}
+
+.impowerBox .icon38_msg.succ {
+	background: url(https://www.wezchina.com/app/Tpl/wezchina/images/wz_ui/icon-login.png)0 -46px no-repeat;
+}
+
+.impowerBox .icon38_msg {
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+}
+
+.impowerBox .status_icon {
+	margin-right: 5px;
+}
+
+.impowerBox .status_txt p {
+	top: -2px;
+	position: relative;
+	margin: 0;
+}
+
+.impowerBox .status p {
+	font-size: 13px;
+}
+
+.mobile-login {
+	width: 32px;
+	height: 32px;
+	display: block;
+	background: url(https://www.wezchina.com/app/Tpl/wezchina/images/wz_ui/icon-login.png) no-repeat 0 -32px;
+	opacity: .6;
+	position: absolute;
+	right: -28px;
+	top: 13px;
+}
+
+.impowerBox .qrcode {
+	width: 280px;
+	margin-top: 15px;
+	border: 1px solid #E2E2E2;
+}
+
+.impowerBox .qrcode {
+	width: 230px;
+}
+

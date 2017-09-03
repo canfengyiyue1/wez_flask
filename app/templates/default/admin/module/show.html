@@ -1,0 +1,43 @@
+{% extends "default/admin/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block page_content %}
+
+<p> {{ data.id}} --- {{ data.name}} </p>
+<p> {{ data.displayname}} </p>
+<p>
+<a href="{{url_for('admin_module_function.create',mid=data.id)}}" class="btn btn-default">添加</a>
+<a href="{{url_for('admin_product.create',pid=data.id)}}" class="btn btn-default">生成产品</a>
+</p>
+<table class="table table-bordered">
+    <tbody>
+        <tr>
+            <th>编号</th>
+            <th>weid</th>
+            <th>name</th>
+            <th>显示名称</th>
+            <th>创建时间</th>
+            <th>最后更新</th>
+            <th>操作</th>
+        </tr>
+{% for item in data.functions %}
+        <tr>
+            <td>{{ item.id}}</td>
+            <td>{{ item.weid}}</td>
+            <td>{{ item.name}}</td>
+            <td>{{ item.displayname}}</td>
+            <td>{{ item.created_at}}</td>
+            <td>{{ item.updated_at}}</td>
+            <td>
+<a href="{{url_for('admin_module_function.edit',mid=data.id, id=item.id)}}" class="btn btn-default">编辑</a>
+<a href="{{url_for('admin_module_function.delete',mid=data.id, id=item.id)}}" class="btn btn-danger">删除</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock page_content %}
+
+{% block scripts %}
+{{ super() }}
+{% endblock %}

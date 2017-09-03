@@ -1,0 +1,39 @@
+{% extends "default/admin/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block page_content %}
+<table class="table table-bordered">
+    <tbody>
+        <tr>
+            <th>编号</th>
+            <th>weid</th>
+            <th>name</th>
+            <th>显示名称</th>
+            <th>类型</th>
+            <th>创建时间</th>
+            <th>最后更新</th>
+            <th>操作</th>
+        </tr>
+        {% for item in lists %}
+        <tr>
+            <td>{{ item.id}}</td>
+            <td>{{ item.weid}}</td>
+            <td>{{ item.name}}</td>
+            <td>{{ item.displayname}}</td>
+            <td>{{ item.type}}</td>
+            <td>{{ item.created_at}}</td>
+            <td>{{ item.updated_at}}</td>
+            <td>
+<a href="{{url_for('admin_product.manage',id=item.id)}}" class="btn btn-default">管理</a>
+<a href="{{url_for('admin_product.edit',id=item.id)}}" class="btn btn-default">编辑</a>
+<a href="{{url_for('admin_product.delete',id=item.id)}}" class="btn btn-danger">删除</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock page_content  %}
+
+{% block scripts %}
+{{ super() }}
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "default/user/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}微众中国 产品列表{% endblock %}
+
+
+
+{% block page_content %}
+<h1>微众中国 产品列表</h1>
+{% for pro in products %}
+<div>
+    <form action="/user/buyProduct" method="post">
+    产品名：{{pro.name}}<br>
+    产品描述：{{pro.description}}
+        <input type="hidden" name="proID" id ="proID" value="{{pro.id}}">
+        <button  type="submit" class="btn btn-default">购买</button>
+    </form>
+</div>
+{%endfor%}
+
+
+
+{% endblock page_content  %}
+{% block scripts %}
+{{ super() }}
+{% endblock %}

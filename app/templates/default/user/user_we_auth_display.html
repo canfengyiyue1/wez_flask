@@ -1,0 +1,25 @@
+
+{% extends "default/user/base.html" %}
+
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}微众中国 用户实名认证{% endblock %}
+
+{% block index_page %}
+This is user index
+企业名：{{name}}
+
+认证状态：
+{% if active == 0%}
+                 未认证
+{% elseif active == 1%}
+                 已认证
+{% else %}
+                 审核中
+{% endif %}
+
+{% endblock index_page %}
+
+{% block scripts %}
+{{ super() }}
+{% endblock %}

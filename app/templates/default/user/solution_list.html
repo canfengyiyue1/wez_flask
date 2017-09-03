@@ -1,0 +1,25 @@
+{% extends "default/user/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}微众中国 方案列表{% endblock %}
+
+
+
+{% block page_content %}
+<h1>微众中国 方案列表</h1>
+{% for slo in solutions %}
+<div>
+    <form action="/user/buySolution" method="post">
+    方案名：{{slo.name}}<br>
+    方案描述：{{slo.description}}
+        <input type="hidden" name="sloID" id ="sloID" value="{{slo.id}}">
+        <button  type="submit" class="btn btn-default">购买</button>
+    </form>
+</div>
+{%endfor%}
+
+
+{% endblock page_content  %}
+{% block scripts %}
+{{ super() }}
+{% endblock %}

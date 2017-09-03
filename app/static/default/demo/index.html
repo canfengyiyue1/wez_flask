@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<!--[if lt IE 9]>
+		  <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+		  <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<!--固定顶部-->
+		<header id="header">
+			<nav class="navbar navbar-default navbar-fixed-top navbar-color">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+				      	</button>
+						<a class="navbar-brand navbar-logo" href="#">
+							<img src="imgs/logo.png" class="we-logo" />
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="#" class="list">首页</a>
+							</li>
+							<li>
+								<a href="#" class="list">众筹</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" id="information" class="list">资讯</a>
+								<div class="cont hidden-xs" style="left: -3px;">
+									<a href="/notice">重要公告</a>
+									<a href="/activity">线下活动</a>
+									<a href="/guider">创业向导</a>
+									<a href="/trends">创业动态</a>
+								</div>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right hidden-xs">
+							<li>
+								<div class="sing_in">
+									<a href="/login" class="go_sing_in">快速登录</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!--index幻灯轮播-->
+		<section>
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="imgs/banner2.jpg" alt="...">
+						<div class="carousel-caption captionA">
+							<div class="info ban2_info">
+								<h2 style="font-size: 40px;" class="brand">再大的品牌 </h2>
+								<h3 style="font-size: 53px;font-weight: bold;padding: 0;margin-top: -10px;letter-spacing: 3px;" class="circles">也必须有自己的圈子</h3>
+								<div class="p1Btn p1Btn_new hidden-xs">
+									<a href="/login" class="b2">我的微主页</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="imgs/Z.jpg" alt="...">
+						<div class="carousel-caption captionA">
+							<div class="info ban2_info">
+								<h2 style="font-size: 40px;" class="brand">微主页</h2>
+								<h3 style="font-size: 53px;font-weight: bold;padding: 0;margin-top: -10px;letter-spacing: 3px;" class="circles">重新定义圈子</h3>
+								<div class="p1Btn p1Btn_new hidden-xs">
+									<a href="/login" class="b2">我的微主页</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="imgs/banner1.jpg" alt="...">
+						<div class="carousel-caption captionA">
+							<div class="info">
+								<h2 class="brand1">微力量 众行远</h2>
+								<!--<h3>微众中国 领先的众创投融资平台</h3>-->
+								<div class="p1Btn center-block hidden-xs">
+									<a href="" class="b1">了解详情</a>
+									<a href="/login" class="b2">我的微主页</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span></span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="right-arrow">
+   				</span>
+				</a>
+			</div>
+		</section>
+		<!--产品与解决方案-->
+		<section class="products progress-ab">
+			<div>
+				<div class="text-center" style="margin-top:70px;">
+					<h1 class="chanp">产品与解决方案</h1>
+					<h3 class="products">Products & Solutions</h3>
+				</div>
+				<div class="arrow-bg">
+					<div class="psc psc_1">
+						<em class=""></em><span>自媒体宣传平台</span>
+						<div class="info info-one hidden-xs" style="display: none; opacity: 0.940858;">
+							<b>自媒体宣传平台</b> 用户抓取率100%，实现网络宣传，自媒体广告宣传，品牌宣传效果。
+						</div>
+					</div>
+					<div class="psc psc_2">
+						<em class=""></em>
+						<span>自营销平台</span>
+						<div class="info info-one hidden-xs" style="display: none; opacity: 0.913817;">
+							<b>自营销平台</b> 提供全面个性化营销模式及O2O营销模式（线上线下结合）增加了用户的粘性
+						</div>
+					</div>
+					<div class="psc psc_3"><em class=""></em><span>圈子管理平台</span>
+						<div class="info info-one hidden-xs" style="display: none; opacity: 0.913817;">
+							<b>圈子管理平台</b> 对用户的圈层管理，提高用户粘性并提高用户复购率，从而实现社群营销。
+						</div>
+					</div>
+					<div class="psc psc_4"><em class=""></em><span>会员管理平台</span>
+						<div class="info info-one hidden-xs" style="display: none; opacity: 0.913817;">
+							<b>会员管理平台</b> 智能化会员管理系统（CRM），针对后台大数据的统计和会员不同等级，管理激活会员。
+						</div>
+					</div>
+					<div class="psc psc_5"><em class=""></em><span>社群微商城平台</span>
+						<div class="info info-one hidden-xs" style="display: none; opacity: 0.913817;">
+							<b>社群微商城平台</b> 建立独立的产品微商城平台，实现社群化商城营销，PC和移动端在线支付。
+						</div>
+					</div>
+					<i class="hidden-xs"></i>
+				</div>
+
+			</div>
+		</section>
+		<!--展示分类-->
+		<section style="width:100%;height:750px;background: #FAFAFA">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-8">
+						<div class="left-pc">
+							<div class="pc hidden-xs hidden-sm">
+								<ul class="big-img">
+									<li class=""><img src="https://www.wezchina.com/app/Tpl/wezchina/index/images/pc_img1.png"></li>
+									<li class=""><img src="https://www.wezchina.com/app/Tpl/wezchina/index/images/pc_img2.png"></li>
+									<li class=""><img src="https://www.wezchina.com/app/Tpl/wezchina/index/images/pc_img3.png"></li>
+									<li class=""><img src="https://www.wezchina.com/app/Tpl/wezchina/index/images/pc_img4.png"></li>
+									<li class=""><img src="https://www.wezchina.com/app/Tpl/wezchina/index/images/pc_img5.png"></li>
+									<li class=""><img src="https://www.wezchina.com/app/Tpl/wezchina/index/images/pc_img6.png"></li>
+								</ul>
+							</div>
+							<div class="phone">
+								<ul class="small-img">
+									<li class=""><img src="https://www.wezchina.com/app/Tpl/wezchina/index/images/phone_img1.png"></li>
+									<li class=""><img src="https://www.wezchina.com/app/Tpl/wezchina/index/images/phone_img1.png"></li>
+									<li class=""><img src="https://www.wezchina.com/app/Tpl/wezchina/index/images/phone_img1.png"></li>
+									<li class=""><img src="https://www.wezchina.com/app/Tpl/wezchina/index/images/phone_img1.png"></li>
+									<li class=""><img src="https://www.wezchina.com/app/Tpl/wezchina/index/images/phone_img1.png"></li>
+									<li class=""><img src="https://www.wezchina.com/app/Tpl/wezchina/index/images/phone_img1.png"></li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-4">
+						<div class="right-img">
+							<div class="row">
+								<div class="col-md-4 col-sm-6">
+							<a href="javascript:;" class="" data-index=0><b><img src="https://www.wezchina.com/app/Tpl/wezchina/index/images/p3icon1.png" class="deviation"> </b><span>微主页</span></a>
+									
+								</div>
+								<div class="col-md-4 col-sm-6">
+							<a href="javascript:;" class="" data-index=1><b><img src="https://www.wezchina.com/app/Tpl/wezchina/index/images/p3icon2.png"> </b><span>圈子</span></a>
+									
+								</div>
+								<div class="col-md-4 col-sm-6">
+							<a href="javascript:;" class="" data-index=2><b><img src="https://www.wezchina.com/app/Tpl/wezchina/index/images/p3icon3.png"> </b><span>发布文章</span></a>
+									
+								</div>
+								<div class="col-md-4 col-sm-6">
+							<a href="javascript:;" class="" data-index=3><b><img src="https://www.wezchina.com/app/Tpl/wezchina/index/images/p3icon4.png"> </b><span>发布项目</span></a>
+									
+								</div>
+								<div class="col-md-4 col-sm-6">
+							<a href="javascript:;" class="" data-index=4><b><img src="https://www.wezchina.com/app/Tpl/wezchina/index/images/p3icon5.png"> </b><span>发布活动</span></a>
+									
+								</div>
+								<div class="col-md-4 col-sm-6">
+							<a href="javascript:;" class="" data-index=5><b><img src="https://www.wezchina.com/app/Tpl/wezchina/index/images/p3icon6.png"> </b><span>商城</span></a>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!--最新动态-->
+		<section class="dynamic hidden-sm hidden-xs">
+			<div class="section">
+				<div class="tit text-center">
+					<span>最新动态</span>
+					<h2 class="en">NEW CONSULTAION</h2>
+				</div>
+				<div class="warp consultaion">
+					<div class="ct_warp clearfix">
+						<ul style="width: 2214px; left: 12px;" class="voidlist-init">
+							<li class="article-item">
+								<a href="/trends/34.html" class="info">
+									<span class="img"><img src="imgs/img1.png"></span>
+									<h2>2017年中国电商怎么走？盘点影响2016十大电商事件！</h2>
+									<p class="displayPart">2016电商死亡名单触目惊心、实体倒闭潮仍在持续，2017年会怎样？过去的一年，我们做过什么？渴...</p>
+								</a>
+								<div class="clearfix ct_fot">
+									<span class="time"><b>01-05</b>2017</span>
+									<a href="/trends/34.html" class="deilt_btn">详情</a>
+								</div>
+							</li>
+							<li class="article-item">
+								<a href="/trends/30.html" class="info">
+									<span class="img"><img src="imgs/img2.png"></span>
+									<h2>年关将近，看看那些在创业路上依旧坚挺的公司</h2>
+									<p class="displayPart">随着近年来的创业趋势，创业者也是峰峰开始了自己的创业之路，众创成了现代年轻人自以为豪的事...</p>
+								</a>
+								<div class="clearfix ct_fot">
+									<span class="time"><b>12-29</b>2016</span>
+									<a href="/trends/30.html" class="deilt_btn">详情</a>
+								</div>
+							</li>
+							<li class="article-item">
+								<a href="/notice/29.html" class="info">
+									<span class="img"><img src="imgs/img3.png"></span>
+									<h2>繁荣产业生态，共建网络强国 ECICE总结2016展望2017</h2>
+									<p class="displayPart">2016年12月27日工业和信息化部信息通信经济专家委员会（ECICE）在中国信息通信研究院中关村翠...</p>
+								</a>
+								<div class="clearfix ct_fot">
+									<span class="time"><b>12-28</b>2016</span>
+									<a href="/notice/29.html" class="deilt_btn">详情</a>
+								</div>
+							</li>
+							<li class="article-item">
+								<a href="/notice/28.html" class="info">
+									<span class="img"><img src="imgs/img4.png"></span>
+									<h2>当“互联网+”满天飞的时候，老板你是不是也有过这样的迷茫？</h2>
+									<p class="displayPart">他们说传统零售行业的黄金时代已经过去，线下零售已经或即将被线上取代，只剩你还在苦苦坚持，...</p>
+								</a>
+								<div class="clearfix ct_fot">
+									<span class="time"><b>12-28</b>2016</span>
+									<a href="/notice/28.html" class="deilt_btn">详情</a>
+								</div>
+							</li>
+							<li class="article-item">
+								<a href="/activity/23.html" class="info">
+									<span class="img"><img src="imgs/img5.jpg"></span>
+									<h2>陕西互联网创业大讲堂2期（互联网金融专场）参会嘉宾曝光</h2>
+									<p class="displayPart">陕西互联网创业大讲堂2期（互联网金融专场）参会嘉宾曝光，大咖云集</p>
+								</a>
+								<div class="clearfix ct_fot">
+									<span class="time"><b>09-23</b>2015</span>
+									<a href="/activity/23.html" class="deilt_btn">详情</a>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+					<a href="javascript:;" class="p4_arrow l hidden-md"></a>
+					<a href="javascript:;" class="p4_arrow r hidden-md"></a>
+					<p class="arrow_point"><span class="active"></span><span class=""></span></p>
+				</div>
+			</div>
+		</section>
+		<!--域名-->
+		<section class="domain">
+			<div class="got">
+				<h2 class="text-center">请在这里输入您的专属域名</h2>
+				<p class="text-center">在您注册开通的时候，我们为您主页提供了一个URL地址，例如： https://yourname.wezchina.com
+					<br>请输入您的主页域名，前往微主页
+				</p>
+				<div class="go text-center">
+					<input type="text" placeholder="请输入您的主页域名"><span>.wezchina.com</span><button id="login-btn">前往微主页</button>
+				</div>
+			</div>
+		</section>
+		<!--底部footer-->
+		<footer class="footer">
+
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="left">
+								<h2><i><img src="imgs/logo1.png"></i>微主页，重新定义圈子</h2>
+								<p>
+									<a href="/help-about.html" title="关于我们">关于我们</a>
+									<i>|</i>
+									<a href="/help-contact.html" title="联系我们">联系我们</a>
+									<i>|</i>
+									<a href="/help-partner.html" title="合作伙伴">合作伙伴</a>
+									<i>|</i>
+									<a href="/help-term.html" title="服务条款">服务条款</a>
+								</p>
+								<p class="feedback_adv">反馈建议：service@wezchina.com</p>
+								<p class="work_time">工作时间：周一到周五 9:00-18:00</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6  col-xs-12">
+							<div class="right">
+								<h2>合作伙伴</h2>
+								<div class="clearfix">
+									<a href="javascript:;"><img src="imgs/aly.png"></a>
+									<a href="javascript:;"><img src="imgs/txyun.png"></a>
+									<a href="javascript:;"><img src="imgs/wyyx.png"></a>
+									<a href="javascript:;"><img src="imgs/wyqiyu.png"></a>
+									<a href="javascript:;"><img src="imgs/umeng.png"></a>
+									<a href="javascript:;"><img src="imgs/gt.png"></a>
+									<a href="javascript:;"><img src="imgs/teambition.png"></a>
+									<a href="javascript:;"><img src="imgs/yp.png"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-12 hidden-sm">
+							<div class="code">
+								<b><img src="imgs/code.jpg"></b>
+								<span>扫码关注"We互助"平台</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="container">
+				<div class="footer-bom">
+					本站由
+					<a href="javascript:;" style="color: #fff;">
+						大秦云 提供云加速与安全服务
+					</a>
+					Copyright © 2016 微众中国 wezchina.com 版权所有 陕ICP备15006570号
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="js/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.bootcss.com/velocity/1.5.0/velocity.js"></script>
+		
+		<script src="js/index.js"></script>
+	</body>
+
+</html>

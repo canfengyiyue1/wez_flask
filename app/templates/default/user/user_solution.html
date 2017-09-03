@@ -1,0 +1,21 @@
+{% extends "default/user/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}微众中国--已购买方案{% endblock %}
+
+{% block index_page %}
+
+
+
+  <b>已购买方案：</b><br>
+
+       {%for solution in solutions%}
+        方案名：{{solution.name}}
+        方案描述：{{solution.description}}<br>
+       {% endfor %}
+
+{% endblock index_page %}
+
+{% block scripts %}
+{{ super() }}
+{% endblock %}

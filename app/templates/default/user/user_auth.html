@@ -1,0 +1,30 @@
+{% extends "default/user/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}微众中国 用户实名认证{% endblock %}
+
+
+
+{% block page_content %}
+
+<!--<form method="post" action="/user/doUserAuth"  method = "post">-->
+
+    <!--<div class="form-group">-->
+        <!--身份证姓名：<input  id="name" name="name" >-->
+        <!--身份证号：<input  id="ID_num"  name="ID_num" >-->
+        <!--身份证正面照：<input  id="ID_photo_front" name="ID_photo_front"}>-->
+        <!--身份证背面照：<input  id="ID_photo_back" name="ID_photo_back" >-->
+    <!--</div>-->
+    <!--<div class="form-group">-->
+        <!--<button  type="submit" class="btn btn-default">Submit</button>-->
+    <!--</div>-->
+<!--</form>-->
+
+{{ wtf.quick_form(form) }}
+
+
+
+{% endblock page_content  %}
+{% block scripts %}
+{{ super() }}
+{% endblock %}

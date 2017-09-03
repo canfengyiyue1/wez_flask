@@ -1,0 +1,26 @@
+{% macro render_function(pid,module) %}
+        <div class="p-f-f">
+            <div>编号</div>
+            <div>name</div>
+            <div>显示名称</div>
+            <div>价格</div>
+            <div>出售</div>
+            <div>状态</div>
+            <div>操作</div>
+        </div>
+        {% for item in module.functions %}
+        <form medivod='POST' class="p-f-f" action="{{url_for('admin_product_function.create')}}">
+            <div>{{ item.id}}</div>
+            <div>{{ item.name}}</div>
+            <div>{{ item.displayname}}</div>
+            <div><input type="text" name="price" value="0"></div>
+            <div><input type="text" name="forsale" value="0"></div>
+            <div><input type="text" name="status" value="0">
+                <input type="hidden" name="product_id" value="{{pid}}">
+                <input type="hidden" name="function_id" value="{{item.id}}">
+            </div>
+            <div><input type="submit" value="添加"></div>
+        </form>
+        {% endfor %}
+{% endmacro %}
+

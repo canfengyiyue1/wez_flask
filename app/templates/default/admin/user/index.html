@@ -1,0 +1,37 @@
+{% extends "default/admin/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}微众中国{% endblock %}
+
+{% block index_page %}
+{% endblock index_page %}
+{% block page_content %}
+<table class="table table-bordered">
+    <tbody>
+        <tr>
+            <th>编号</th>
+            <th>真是姓名</th>
+            <th>手机号</th>
+            <th>昵称</th>
+            <th>状态</th>
+            <th>创建时间</th>
+            <th>最后更新</th>
+        </tr>
+        {% for user in lists %}
+        <tr>
+            <td>{{ user.id}}</td>
+            <td>{{ user.real_name}}</td>
+            <td>{{ user.mobile}}</td>
+            <td>{{ user.nickname}}</td>
+            <td>{{ user.active}}</td>
+            <td>{{ user.created_at}}</td>
+            <td>{{ user.updated_at}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock page_content  %}
+
+{% block scripts %}
+{{ super() }}
+{% endblock %}

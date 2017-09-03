@@ -1,0 +1,257 @@
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='default/home/css/login.css') }}">
+{% extends "default/home/home_base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}登录{% endblock %}
+
+{% block page_content %}
+<section>
+			<div class="Giant-screen">
+				<img src="https://www.wezchina.com/app/Tpl/wezchina/images/login_bg.jpg" width="100%" style="position:absolute;" />
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 hidden-xs"></div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-9">
+									<div class="new_wz_log">
+										<div class="f_l dlr pr wz-login-mobile">
+											<div class="dlr1" style="height: 20px;">
+												<span style="font-size: 24px;color: #333">快速登录</span>
+											</div>
+											<div class="blank0"></div>
+											<form id="user_login_form" name="user_login_form" action="/user-do_login.html">
+												<div class="control-group">
+													<select class="wz_new_sel">
+														<option value="中国">中国</option>
+													</select>
+													<div class="control-text" style="height: 50px;">
+														<div class="pr f_l">
+															<input type="text" placeholder="请输入手机号免费注册" value="" class="textbox" id="settings-mobile" name="mobile" size="30" style="width: 75%;border-top-right-radius: 4px;border-bottom-right-radius: 4px;">
+
+														</div>
+													</div>
+													<div class="blank0"></div>
+												</div>
+
+												<div class="control-group">
+													<div class="control-text" style="height: 50px;">
+														<div class="pr f_l">
+															<input type="text" placeholder="请输入四位图片验证码" id="image_code" name="image_code" class="textbox f_l Code" style="width: 62%;border-top-right-radius: inherit; border-top-left-radius: 4px;border-bottom-left-radius:4px;border-bottom-right-radius: inherit;float:left;margin-top: -3px;">
+															<img src="https://www.wezchina.com/verify.php?name=login_verify" alt="https://www.wezchina.com/verify.php?name=login_verify" id="verify" class="verify" align="absmiddle" width="130" height="50">
+
+														</div>
+														<div class="tip_box"></div>
+													</div>
+													<div class="blank0"></div>
+												</div>
+												<div class="blank0"></div>
+												<div class="control-group mycontrol-group">
+													<div class="control-text" style="height: 50px;">
+														<div class="pr f_l">
+															<input type="text" placeholder="请输入短信验证码" id="settings-mobile-code" name="verify_coder" class="textbox f_l Code" style="width: 62%;border-radius: 4px;border-top-right-radius: inherit; border-top-left-radius: 4px;border-bottom-left-radius: 4px; border-bottom-right-radius: inherit;float: left;">
+															<input type="button" value="获取验证码" class="send_sms_verify ui-button f_r bg_red" id="J_send_sms_verify" rel="ui-button" style="border-top-right-radius: 4px;border-bottom-right-radius: 4px;border-top-left-radius: inherit;border-bottom-left-radius: inherit;height: 50px;">
+
+														</div>
+														<div class="tip_box f_l"></div>
+													</div>
+													<div class="blank0"></div>
+												</div>
+												<div class="blank0"></div>
+												<div class="button_row term">
+													<label class="ui_checkbox common_cbo_checked" rel="agree_register" id="agree_register" checked="checked" style="display: inline-block; cursor: pointer;">
+						已阅读并同意
+					<a href="/help-term.html" target="_blank">
+											《微众中国服务条款》
+										</a>
+					</label>
+													<div class="blank0"></div>
+												</div>
+												<div class="control-group">
+													<input type="button" value="登录" name="submit_form" class="ui-button theme_bgcolor bg_red" id="btn_do_login" style="width: 140px;height: 42px;line-height: 42px;margin-top: 12px;">
+													<input type="hidden" value="1" name="ajax">
+												</div>
+												<div class="blank0"></div>
+
+											</form>
+											<div class="icon-login">
+												<span class="qrcode-login"></span>
+											</div>
+										</div>
+										<div class="f_l dlr pr wz-login-code" style="display: none; padding-top: 0">
+											<p id="login_container" style="text-align: center;position: relative;top: -25px;"><iframe src="https://open.weixin.qq.com/connect/qrconnect?appid=wx4331cbcc35439e88&amp;scope=snsapi_login&amp;redirect_uri=https://www.wezchina.com/weixin-auth.html&amp;state=123344&amp;login_type=jssdk&amp;href=https://www.wezchina.com/app/Tpl/wezchina/css/wechat_login.css" frameborder="0" scrolling="no" width="300px" height="400px"></iframe>
+											</p>
+											<div class="icon-login" title="" style="bottom:76px;">
+												<span class="mobile-login"></span>
+											</div>
+										</div>
+										<div class="f_l dlr pr wz-login-subadmin" style="display: none;">
+											<div class="dlr1" style="height: 20px;margin-left: -12px;">
+												<span style="font-size: 24px;color: #333">管理员登录</span>
+											</div>
+											<div class="blank0"></div>
+											<form id="subadmin_login_form" name="subadmin_login_form" action="/user-do_subadmin_login.html" style="margin:0 auto">
+												<div class="control-group">
+													<select class="wz_new_sel">
+														<option value="中国">中国</option>
+													</select>
+													<div class="control-text" style="height: 50px;">
+														<div class="pr f_l">
+															<input type="text" placeholder="请输入手机号免费注册" value="" class="textbox" id="settings-mobile" name="mobile" size="30" style="width: 226px;border-top-right-radius: 4px;border-bottom-right-radius: 4px;">
+
+														</div>
+													</div>
+													<div class="blank0"></div>
+												</div>
+
+												<div class="control-group">
+													<div class="control-text" style="height: 50px;">
+														<div class="pr f_l">
+															<input type="text" placeholder="请输入四位图片验证码" id="image_code" name="image_code" class="textbox f_l" style="width: 195px;border-top-right-radius: inherit; border-top-left-radius: 4px;border-bottom-left-radius: 4px; border-bottom-right-radius: inherit;">
+															<img src="https://www.wezchina.com/verify.php?name=login_verify" alt="https://www.wezchina.com/verify.php?name=login_verify" id="verify" class="verify" align="absmiddle" width="130" height="50" style="margin-left:-4px; ">
+														</div>
+														<div class="tip_box"></div>
+													</div>
+													<div class="blank0"></div>
+												</div>
+												<div class="blank0"></div>
+												<div class="control-group mycontrol-group">
+													<div class="control-text" style="height: 50px;">
+														<div class="pr f_l">
+															<input type="text" placeholder="请输入短信验证码" id="settings-mobile-code" name="verify_coder" class="textbox f_l" style="width: 195px;border-top-right-radius: inherit; border-top-left-radius: 4px;border-bottom-left-radius: 4px; border-bottom-right-radius: inherit;">
+															<input type="button" value="获取验证码" class="send_sms_verify ui-button bg_red f_r" id="J_send_sms_verify" rel="ui-button" style="border-top-right-radius: 4px;border-bottom-right-radius: 4px;border-top-left-radius: inherit;border-bottom-left-radius: inherit;height: 50px;">
+														</div>
+														<div class="tip_box f_l"></div>
+													</div>
+													<div class="blank0"></div>
+												</div>
+												<div class="blank0"></div>
+												<div class="control-group">
+													<input type="button" value="登录" name="submit_form" class="ui-button theme_bgcolor bg_red1" id="btn_do_login" style="width: 140px;height: 42px;line-height: 42px;margin-top: 25px;">
+													<input type="hidden" value="1" name="ajax">
+													<div class=" f_l" style="width:auto"></div>
+												</div>
+											</form>
+											<div class="blank20"></div>
+											<div class="icon-login" style="right: 40px;bottom:20px">
+												<span class="mobile-login"></span>
+											</div>
+											<div class="icon-login" style="right: 0;padding-right: 0;bottom:20px">
+												<span class="subadmin-login-active"></span>
+											</div>
+										</div>
+										<div class="clear"></div>
+										<div class="main impowerBox">
+											<div class="loginPanel normalPanel" style="margin-top: 25px;">
+												<div class="title">微信登录</div>
+												<div class="waiting panelContent">
+													<div class="wrp_code"><img class="qrcode lightBorder" src="https://open.weixin.qq.com/connect/qrcode/061ET8--eTWhLwzU"></div>
+													<div class="info">
+														<div class="status status_browser js_status" id="wx_default_tip">
+															<p>请使用微信扫描二维码登录</p>
+															<p>“微众中国”</p>
+														</div>
+														<span class="mobile-login"></span>
+														<div class="status status_succ js_status" style="display:none" id="wx_after_scan">
+															<i class="status_icon icon38_msg succ"></i>
+															<div class="status_txt">
+																<h4>扫描成功</h4>
+																<p>请在微信中点击确认即可登录</p>
+															</div>
+														</div>
+														<div class="status status_fail js_status" style="display:none" id="wx_after_cancel">
+															<i class="status_icon icon38_msg warn"></i>
+															<div class="status_txt">
+																<h4>您已取消此次登录</h4>
+																<p>您可再次扫描登录，或关闭窗口</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 hidden-sm hidden-xs">
+									<div style="position: relative;top: 25px;left:-18px;">
+										<div style="width: 145px;padding:15px;background: #fff;box-sizing: border-box;border-radius: 5px;text-align:center">
+											<img src="https://www.wezchina.com/app/Tpl/wezchina/index/images/code.jpg" alt="扫码关注" we互助 "平台"="" style="width: 100%">
+											<div>扫码关注"We互助"平台</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+<footer class="footer hidden-sm hidden-xs">
+			<div class="login_bottom">
+				<div class="links">
+					<a href="/help-about.html" title="关于我们">关于我们</a>
+					<span>|</span>
+					<a href="/help-contact.html" title="联系我们">联系我们</a>
+					<span>|</span>
+					<a href="/help-partner.html" title="合作伙伴">合作伙伴</a>
+					<span>|</span>
+					<a href="/help-term.html" title="服务条款">服务条款</a>
+				</div>
+				<div class="copyright">
+					<span class="mobile-hide">本站由 
+    			 <em href="javascript:;">
+    			 大秦云  提供云加速与安全服务
+    			 </em> 
+    		</span>
+					<span class="law">
+    	  	Copyright © 2016 微众中国    wezchina.com  版权所有  陕ICP备15006570号    	  </span>
+				</div>
+			</div>
+		</footer>
+
+<!--<div>
+<form method="POST" class="form-horizontal" role="form">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+    {{ form.mobile.label(class="col-sm-2") }} 
+    {{ form.mobile(id='mobile',class="col-sm-5")}}
+    </div>
+    <div class="form-group">
+    {{ form.sms_code.label(class="col-sm-2") }}
+    {{ form.sms_code(class="col-sm-3")}}
+    <div class="col-sm-2">
+        <button type="button" id="send_code" class="btn btn-primy">获取验证码</button>
+    </div>
+    </div>
+    {{ wtf.form_field(form.submit) }}
+
+</div>-->
+
+<!--{% if pagination %}-->
+
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script src="{{ url_for('static', filename='default/home/js/layer.js') }}" type="text/javascript" charset="utf-8"></script>
+<script src="{{ url_for('static', filename='default/home/js/login.js') }}" type="text/javascript" charset="utf-8"></script>
+<script>
+$(function(){
+    url = '{{url_for('auth.sendVerify')}}'
+    $mobile = $('#mobile')
+    $btn_send = $('#send_code')
+    $btn_send.on('click',function(e){
+        mobile = $mobile.val()
+    $.get(url + '/' + mobile,function(json){
+        alert(json.msg)
+    })
+
+    })
+
+
+
+})
+</script>
+{% endblock %}

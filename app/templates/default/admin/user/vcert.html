@@ -1,0 +1,33 @@
+{% extends "default/admin/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block page_content %}
+<table class="table table-bordered">
+    <tbody>
+        <tr>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>地址</th>
+            <th>nature</th>
+            <th>license</th>
+            <th>authorizaton</th>
+            <th>active</th>
+        </tr>
+        {% for user in lists %}
+        <tr>
+            <td>{{ user.id}}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.address}}</td>
+            <td>{{ user.nature}}</td>
+            <td>{{ user.license}}</td>
+            <td>{{ user.authorization}}</td>
+            <td>{{ user.active}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock page_content  %}
+
+{% block scripts %}
+{{ super() }}
+{% endblock %}

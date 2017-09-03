@@ -1,0 +1,22 @@
+
+{% extends "default/user/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}微众中国{% endblock %}
+
+{% block index_page %}
+<Ul>
+    <Li><a href="{{ url_for('user.setting') }}" >资料设置</a></Li>
+    <Li><a href="{{ url_for('user.userAuth') }}" >实名认证</a></Li>
+    <Li><a href="{{ url_for('user.userWeAuth') }}" >加V认证</a></Li>
+    <Li><a href="{{url_for('user.userOrder')}}">我的订单</a></Li>
+    <Li><a href="{{url_for('user.productList')}}">产品购买</a></Li>
+    <Li><a href="{{url_for('user.userProduct')}}">已购买产品</a></Li>
+    <Li><a href="{{url_for('user.solutionList')}}">方案购买</a></Li>
+    <li><a href="{{url_for('user.userSolution')}}">已购买方案</a></li>
+</Ul>
+{% endblock index_page %}
+
+{% block scripts %}
+{{ super() }}
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "default/user/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}微众中国 用户加V实名认证{% endblock %}
+
+
+
+{% block page_content %}
+<h1>微众中国 用户加V实名认证</h1>
+
+{{ wtf.quick_form(form) }}
+
+
+{% endblock page_content  %}
+{% block scripts %}
+{{ super() }}
+{% endblock %}

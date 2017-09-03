@@ -1,0 +1,22 @@
+{% extends "default/user/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}微众中国--已购买产品{% endblock %}
+
+{% block index_page %}
+
+
+
+
+<b>已购买产品：</b><br>
+       {%for product in products%}
+        产品名：{{product.name}}
+        产品描述：{{product.description}}<br>
+       {% endfor %}
+
+
+{% endblock index_page %}
+
+{% block scripts %}
+{{ super() }}
+{% endblock %}
